@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Website Sekolah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-school text-2xl"></i>
+                    <span class="text-xl font-bold">Website Sekolah</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <ul id="nav-menu" class="hidden md:flex space-x-6">
+                    <li><a href="../index.html" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="profil.html" class="hover:text-blue-200 transition">Profil Sekolah</a></li>
+                    <li><a href="berita.html" class="hover:text-blue-200 transition">Berita Sekolah</a></li>
+                    <li><a href="data-guru.html" class="hover:text-blue-200 transition">Data Guru</a></li>
+                    <li><a href="data-siswa.html" class="hover:text-blue-200 transition">Data Siswa</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition font-semibold">About</a></li>
+                </ul>
+            </div>
+            <ul id="mobile-nav" class="hidden md:hidden pb-4 space-y-2">
+                <li><a href="../index.html" class="block hover:text-blue-200 transition">Home</a></li>
+                <li><a href="profil.html" class="block hover:text-blue-200 transition">Profil Sekolah</a></li>
+                <li><a href="berita.html" class="block hover:text-blue-200 transition">Berita Sekolah</a></li>
+                <li><a href="data-guru.html" class="block hover:text-blue-200 transition">Data Guru</a></li>
+                <li><a href="data-siswa.html" class="block hover:text-blue-200 transition">Data Siswa</a></li>
+                <li><a href="about.html" class="block hover:text-blue-200 transition font-semibold">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About</h1>
+            <p class="text-xl">Tentang Website Ini</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- About Website -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-info-circle text-blue-600 text-4xl mr-4"></i>
+                    <h2 class="text-3xl font-bold text-gray-800">Tentang Website</h2>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Website Sekolah ini merupakan platform digital yang dirancang untuk mempermudah akses informasi
+                    mengenai sekolah, termasuk profil sekolah, data guru, data siswa, serta berita dan kegiatan sekolah.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Website ini dibangun menggunakan teknologi modern dan responsif, memastikan pengalaman pengguna yang
+                    optimal di berbagai perangkat, baik desktop, tablet, maupun smartphone.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Teknologi yang Digunakan</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fab fa-html5 text-orange-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800">HTML5</h3>
+                    <p class="text-gray-600 mt-2">Struktur halaman web</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fab fa-css3-alt text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800">Tailwind CSS</h3>
+                    <p class="text-gray-600 mt-2">Framework CSS modern</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fab fa-js text-yellow-500 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800">JavaScript</h3>
+                    <p class="text-gray-600 mt-2">Interaktivitas dan fungsi dinamis</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <i class="fas fa-database text-green-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800">Supabase</h3>
+                    <p class="text-gray-600 mt-2">Database & Storage</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fitur Website</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Manajemen Data Guru</h3>
+                            <p class="text-gray-600">Tambah, edit, dan hapus data guru dengan mudah termasuk foto profil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Manajemen Data Siswa</h3>
+                            <p class="text-gray-600">Kelola data siswa lengkap dengan kelas, NIP, dan foto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Berita & Artikel</h3>
+                            <p class="text-gray-600">Publikasi berita sekolah, event, dan tata cara dengan gambar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Responsive Design</h3>
+                            <p class="text-gray-600">Tampilan optimal di semua perangkat (desktop, tablet, mobile)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links & Resources -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Tautan & Sumber Daya</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div class="flex items-center">
+                            <i class="fab fa-github text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">GitHub Repository</h4>
+                                <p class="text-sm text-gray-600">Source code project</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                           class="text-blue-600 hover:text-blue-800 font-semibold">
+                            Kunjungi <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div class="flex items-center">
+                            <i class="fas fa-database text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Supabase</h4>
+                                <p class="text-sm text-gray-600">Backend as a Service</p>
+                            </div>
+                        </div>
+                        <a href="https://supabase.com" target="_blank" rel="noopener noreferrer"
+                           class="text-blue-600 hover:text-blue-800 font-semibold">
+                            Kunjungi <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div class="flex items-center">
+                            <i class="fas fa-wind text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Tailwind CSS</h4>
+                                <p class="text-sm text-gray-600">CSS Framework</p>
+                            </div>
+                        </div>
+                        <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer"
+                           class="text-blue-600 hover:text-blue-800 font-semibold">
+                            Kunjungi <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div class="flex items-center">
+                            <i class="fas fa-icons text-2xl mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Font Awesome</h4>
+                                <p class="text-sm text-gray-600">Icon library</p>
+                            </div>
+                        </div>
+                        <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer"
+                           class="text-blue-600 hover:text-blue-800 font-semibold">
+                            Kunjungi <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg shadow-lg p-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+                <p class="text-lg mb-6">Untuk informasi lebih lanjut, silakan hubungi kami</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-2xl mr-3"></i>
+                        <span>info@sekolah.sch.id</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-2xl mr-3"></i>
+                        <span>(021) 1234-5678</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-2xl mr-3"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Website Sekolah. All rights reserved.</p>
+            <p class="text-gray-400">Dibuat dengan HTML, Tailwind CSS, JavaScript & Supabase</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

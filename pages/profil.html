@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sekolah - Website Sekolah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-school text-2xl"></i>
+                    <span class="text-xl font-bold">Website Sekolah</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <ul id="nav-menu" class="hidden md:flex space-x-6">
+                    <li><a href="../index.html" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="profil.html" class="hover:text-blue-200 transition font-semibold">Profil Sekolah</a></li>
+                    <li><a href="berita.html" class="hover:text-blue-200 transition">Berita Sekolah</a></li>
+                    <li><a href="data-guru.html" class="hover:text-blue-200 transition">Data Guru</a></li>
+                    <li><a href="data-siswa.html" class="hover:text-blue-200 transition">Data Siswa</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200 transition">About</a></li>
+                </ul>
+            </div>
+            <ul id="mobile-nav" class="hidden md:hidden pb-4 space-y-2">
+                <li><a href="../index.html" class="block hover:text-blue-200 transition">Home</a></li>
+                <li><a href="profil.html" class="block hover:text-blue-200 transition font-semibold">Profil Sekolah</a></li>
+                <li><a href="berita.html" class="block hover:text-blue-200 transition">Berita Sekolah</a></li>
+                <li><a href="data-guru.html" class="block hover:text-blue-200 transition">Data Guru</a></li>
+                <li><a href="data-siswa.html" class="block hover:text-blue-200 transition">Data Siswa</a></li>
+                <li><a href="about.html" class="block hover:text-blue-200 transition">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Profil Sekolah</h1>
+            <p class="text-xl">Mengenal Lebih Dekat Sekolah Kami</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Visi & Misi -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-eye text-2xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-800">Visi</h2>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Menjadi lembaga pendidikan yang unggul, inovatif, dan berkarakter dalam mencetak generasi
+                            yang cerdas, berakhlak mulia, dan siap menghadapi tantangan global di masa depan.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-bullseye text-2xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-800">Misi</h2>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span>Menyelenggarakan pendidikan berkualitas dengan kurikulum yang komprehensif</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span>Mengembangkan karakter siswa yang berintegritas dan bertanggung jawab</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span>Menyediakan fasilitas dan lingkungan belajar yang kondusif</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span>Membina kerjasama dengan orang tua dan masyarakat</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sejarah -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Sejarah Sekolah</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="flex items-start mb-6">
+                    <i class="fas fa-history text-blue-600 text-3xl mr-4"></i>
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Sekolah kami didirikan pada tahun 1985 dengan komitmen untuk menyediakan pendidikan berkualitas
+                            bagi generasi muda. Berawal dari sebuah gedung sederhana dengan hanya beberapa kelas, kini sekolah
+                            kami telah berkembang menjadi institusi pendidikan yang modern dan terpercaya.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Selama lebih dari 40 tahun, kami telah menghasilkan ribuan alumni yang sukses di berbagai bidang.
+                            Prestasi demi prestasi terus diraih, baik dalam bidang akademik maupun non-akademik, membuktikan
+                            dedikasi kami dalam membentuk siswa yang unggul dan berkarakter.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Hingga kini, kami terus berinovasi dan beradaptasi dengan perkembangan zaman, sambil tetap
+                            mempertahankan nilai-nilai luhur dalam pendidikan. Dengan tenaga pengajar yang profesional dan
+                            berpengalaman, serta fasilitas yang terus ditingkatkan, kami siap membawa siswa menuju masa depan
+                            yang gemilang.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fasilitas -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fasilitas Sekolah</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Perpustakaan</h3>
+                    <p class="text-gray-600">Koleksi buku lengkap dan ruang baca yang nyaman</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Laboratorium</h3>
+                    <p class="text-gray-600">Lab komputer, fisika, kimia, dan biologi yang modern</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Lapangan Olahraga</h3>
+                    <p class="text-gray-600">Lapangan basket, voli, dan sepak bola</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ruang Seni</h3>
+                    <p class="text-gray-600">Studio musik dan ruang seni rupa yang lengkap</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kelas Multimedia</h3>
+                    <p class="text-gray-600">Ruang kelas dengan proyektor dan AC</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kantin</h3>
+                    <p class="text-gray-600">Kantin dengan menu sehat dan bergizi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ekstrakurikuler -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Ekstrakurikuler</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-basketball-ball text-blue-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Olahraga</h4>
+                            <p class="text-gray-600">Basket, Voli, Futsal, Badminton, Taekwondo</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-palette text-blue-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Seni & Budaya</h4>
+                            <p class="text-gray-600">Tari, Musik, Teater, Paduan Suara</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-flask text-blue-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sains & Teknologi</h4>
+                            <p class="text-gray-600">Robotika, Coding, KIR (Karya Ilmiah Remaja)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-users text-blue-600 text-xl mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Organisasi</h4>
+                            <p class="text-gray-600">OSIS, PMR, Pramuka, Paskibra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Website Sekolah. All rights reserved.</p>
+            <p class="text-gray-400">Dibuat dengan HTML, Tailwind CSS, JavaScript & Supabase</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

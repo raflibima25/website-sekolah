@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-school text-2xl"></i>
+                    <span class="text-xl font-bold">Website Sekolah</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <ul id="nav-menu" class="hidden md:flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-200 transition font-semibold">Home</a></li>
+                    <li><a href="pages/profil.html" class="hover:text-blue-200 transition">Profil Sekolah</a></li>
+                    <li><a href="pages/berita.html" class="hover:text-blue-200 transition">Berita Sekolah</a></li>
+                    <li><a href="pages/data-guru.html" class="hover:text-blue-200 transition">Data Guru</a></li>
+                    <li><a href="pages/data-siswa.html" class="hover:text-blue-200 transition">Data Siswa</a></li>
+                    <li><a href="pages/about.html" class="hover:text-blue-200 transition">About</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu -->
+            <ul id="mobile-nav" class="hidden md:hidden pb-4 space-y-2">
+                <li><a href="index.html" class="block hover:text-blue-200 transition font-semibold">Home</a></li>
+                <li><a href="pages/profil.html" class="block hover:text-blue-200 transition">Profil Sekolah</a></li>
+                <li><a href="pages/berita.html" class="block hover:text-blue-200 transition">Berita Sekolah</a></li>
+                <li><a href="pages/data-guru.html" class="block hover:text-blue-200 transition">Data Guru</a></li>
+                <li><a href="pages/data-siswa.html" class="block hover:text-blue-200 transition">Data Siswa</a></li>
+                <li><a href="pages/about.html" class="block hover:text-blue-200 transition">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Website Sekolah</h1>
+            <p class="text-xl md:text-2xl mb-8">Membentuk Generasi Cerdas, Berkarakter, dan Berprestasi</p>
+            <a href="pages/profil.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition inline-block">
+                Lihat Profil Sekolah
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- About School -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Tentang Sekolah Kami</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Sekolah kami adalah lembaga pendidikan yang berkomitmen untuk memberikan pendidikan berkualitas tinggi
+                    dengan mengintegrasikan nilai-nilai moral, akademik, dan keterampilan praktis. Kami percaya bahwa setiap
+                    siswa memiliki potensi unik yang dapat dikembangkan melalui pendekatan pembelajaran yang inovatif dan
+                    lingkungan yang mendukung.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Dengan tenaga pengajar yang profesional dan berpengalaman, fasilitas yang memadai, serta kurikulum yang
+                    terus diperbarui, kami berusaha menciptakan pengalaman belajar yang menyenangkan dan bermakna bagi setiap
+                    siswa. Mari bersama-sama membangun masa depan yang lebih cerah melalui pendidikan berkualitas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Informasi</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Data Guru</h3>
+                    <p class="text-gray-600 mb-4">Lihat informasi lengkap tentang tenaga pengajar di sekolah kami.</p>
+                    <a href="pages/data-guru.html" class="text-blue-600 hover:text-blue-800 font-semibold">
+                        Lihat Selengkapnya →
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Data Siswa</h3>
+                    <p class="text-gray-600 mb-4">Informasi lengkap mengenai siswa-siswi yang terdaftar di sekolah.</p>
+                    <a href="pages/data-siswa.html" class="text-blue-600 hover:text-blue-800 font-semibold">
+                        Lihat Selengkapnya →
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Berita Sekolah</h3>
+                    <p class="text-gray-600 mb-4">Baca berita terkini, event, dan informasi penting sekolah.</p>
+                    <a href="pages/berita.html" class="text-blue-600 hover:text-blue-800 font-semibold">
+                        Lihat Selengkapnya →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Website Sekolah. All rights reserved.</p>
+            <p class="text-gray-400">Dibuat dengan HTML, Tailwind CSS, JavaScript & Supabase</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
